@@ -1,0 +1,7 @@
+h1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: blue;
+    color: aliceblue;
+}
