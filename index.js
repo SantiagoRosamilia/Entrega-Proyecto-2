@@ -1,21 +1,31 @@
 let nombre=(prompt("Buenos dias, tardes o noches. Con quien tengo el placer de hablar?"))
-alert ("Un gusto " + nombre + ", espero que estes bien.")
+let edad=(parseInt(prompt("Cual es tu edad?")))
+
+// if (edad >= 18){
+//     alert ("Un gusto " + nombre + ", espero que estes bien.")
+// }
+// else if (edad <= 18){
+//     alert ("Lo sentimos, debes ser mayor de 18 años")
+    
+// }
+if (edad >= 18){
+alert ("Un gusto " + nombre + ", espero que estes bien. Hoy contamos con unos muy buenos descuentos de hasta el 25% por el dia del padre ")
 
 let totalCompra = 0
-let productoSeleccionado = parseInt(prompt("Ingresa el numero del producto que quieras comprar: \n 1.Cerveza \n 2.Wisky \n 3.Coca \n 4. Fernet"))
+let productoSeleccionado = parseInt(prompt("Ingresa el numero del producto que quieras comprar: \n 1. Botella de Cerveza \n 2.Wisky \n 3.Coca-Cola 1.75L \n 4. Fernet"))
 
 let seguirComprando = true
 let decision
 
 while (seguirComprando === true) {
     if (productoSeleccionado === 1) {
-        totalCompra = totalCompra + 1900
+        totalCompra = totalCompra + 600
     } else if (productoSeleccionado === 2) {
-        totalCompra = totalCompra + 1300
+        totalCompra = totalCompra + 7000
     } else if (productoSeleccionado === 3) {
-        totalCompra = totalCompra + 800
+        totalCompra = totalCompra + 500
     } else if (productoSeleccionado === 4) {
-        totalCompra = totalCompra + 1000
+        totalCompra = totalCompra + 1500
     } else {
         productoSeleccionado = parseInt(
             prompt(
@@ -59,3 +69,8 @@ function calcularPrecioConImpuesto(valor) {
 
 let valorFinalConImpuesto = calcularPrecioConImpuesto(valorConDescuento)
 alert('Total a pagar: ' + valorFinalConImpuesto)
+}
+else if (edad <= 18){
+    alert ("Lo sentimos, debes ser mayor de 18 años")
+    
+}
